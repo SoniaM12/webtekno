@@ -1,0 +1,1209 @@
+
+
+html, body {
+    height: 100%; /* Garantisce che il body occupi l'intera altezza */
+    margin: 0; /* Rimuove eventuali margini predefiniti */
+    display: flex;
+    flex-direction: column; /* Allinea gli elementi verticalmente */
+}
+
+main {
+    flex: 1; /* Occupa tutto lo spazio disponibile tra header e footer */
+}
+
+.home  {
+    background-color: #000000;
+    max-width: 100%;
+}  
+
+header {
+    background-color: rgb(124, 0, 240);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spazia h1 e nav */
+    padding: 20px 30px;
+    margin: 0; /* Elimina margin auto ridondante */
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    background-attachment: fixed;
+}
+
+header nav {
+    margin-right: 10px;
+}
+
+header nav ul {
+    display: flex; /* Layout flessibile */
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Spaziatura tra gli elementi */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header h1 a {
+    color: #00FFB3;
+    font-family: "Ethnocentric", sans-serif; /* Aggiunto fallback */
+    font-size: 40px;
+    text-decoration: none;
+}
+
+header nav ul li a {
+    color: #00FFB3;
+    font-family: "Lato", sans-serif; /* Aggiunto fallback */
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header h1 a:hover,
+header nav ul li a:hover {
+    color: #FFFFFF; /* Effetto hover */
+    text-decoration: underline;
+}
+
+.titolohome p {
+    color: #8cff00;
+    font-family:"Orbitron";
+    font-size: 50px;
+    font-style: normal;
+    padding-bottom: 0;
+    line-height: 0%;
+    text-align: center;
+    
+}    
+
+.homepage {
+    margin: auto;
+    width: 100%;
+}
+
+.cheneso img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 0;
+    text-align: center;
+}
+
+.testohome{
+    margin-top: 50px;
+}
+
+.testohome h1 {
+    color: #9B4DFF;
+    font-family: "Orbitron";
+    font-size: 30px;
+    font-style: normal;
+    line-height: 150%; 
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.testohome p {
+    color: #FFF;
+    font-family: "inconsolata";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.testohome p:nth-of-type(3) {
+    color: rgb(0, 255, 225)
+}
+
+.videohome {
+    height: 150%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    max-width: 100%;
+}
+
+.ultimorigo {
+    color: #00FFFF;
+    font-family: "Orbitron";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-left: 50px;
+
+}
+.testoultimo p {
+    color: #FFF;
+    font-family: "inconsolata";
+    font-size: 25px;
+    font-style: normal;
+    line-height: 150%; ;
+    margin-bottom: 30px;
+    margin-left: 50px;
+
+
+}
+.storia {
+    background-image: url("sfondostoria.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.titoloindice {
+    color: #8cff00;
+    font-family: "Orbitron";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.titoloindice1 {
+    color: #00FFB3;
+    text-align: center;
+    font-family: "Orbitron";
+    font-size: 32px;
+    width: 100%; 
+    max-width: 734px; 
+    margin: 0 auto; 
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.titoloindice2 {
+    color: #00A3FF;
+    text-align: center;
+    font-family: "Orbitron";
+    font-size: 32px;
+    width: 100%; 
+    max-width: 734px; 
+    margin: 0 auto; 
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.titoloindice3 {
+    color: #AB63FF;
+    text-align: center;
+    font-family: "Orbitron";
+    font-size: 32px;
+    width: 100%; 
+    max-width: 734px; 
+    margin: 0 auto; 
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.titoloindice4 {
+    color: #F96900;
+    text-align: center;
+    font-family: "Orbitron";
+    font-size: 32px;
+    width: 100%; 
+    max-width: 734px; 
+    margin: 0 auto; 
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+
+.cornice-1, .cornice-2, .cornice-3, .cornice-4,.cornice- {
+    border: 2px solid; 
+    padding: 10px; 
+    width: 664px;
+    height: 75px; 
+    color: #ffffff;
+    font-family: "Orbitron";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+    margin: auto; 
+    margin-top: 20px;
+}
+
+.cornice-1 { border-color: #00FFB3; margin-top: 100px; }
+.cornice-2 { border-color: #00A3FF; }
+.cornice-3 { border-color: #AB63FF; }
+.cornice-4 { border-color: #F96900;  margin-bottom: 100px;}
+
+
+
+a {
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+    color: white;
+}
+.imgstoria {
+    display: flex; /* Attiva Flexbox */
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    
+}
+.story1 {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    background-size: auto;
+    height: 100%;
+    width: 100%;
+}
+.story2 {
+    margin: 0;
+    padding: 0;
+    background-color: black ;
+    height: 100%;
+    width: 100%;
+}
+
+.story3 {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+}
+
+.story4 {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+}
+
+.contento {
+    color: white;
+    font-family: "Lato";
+    font-size: 22px;
+    font-style: normal;
+    line-height: 150%; 
+    width: 660px;
+    flex-shrink: 0;
+    font-weight: 700;
+    max-width: 900px;
+    margin: auto;
+   
+}
+
+.contenuto {
+    color: rgb(255, 255, 255);
+    font-family: "Lato";
+    font-size: 18px;
+    line-height: 150%; 
+    width: 660px;
+    flex-shrink: 0;
+    margin: auto;
+    max-width: 900px;
+    margin-bottom: 50px;
+}
+
+
+.frecciadestra {
+    text-align: center; /* Centra la freccia all'interno del contenitore */
+    margin-top: 20px;
+}
+.frecciasinistra {
+    text-align: center; /* Centra la freccia all'interno del contenitore */
+    margin-top: 20px;
+}
+
+.arrow-link img {
+    width: 50px; /* Adatta la dimensione dell'immagine */
+    height: auto; /* Mantiene le proporzioni */
+    transition: transform 0.3s ease; /* Aggiunge un'animazione */
+}
+
+.arrow-link:hover img {
+    transform: translateX(10px); /* Sposta la freccia verso destra al passaggio del mouse */
+}
+
+
+.arrow-link {
+    text-decoration: none;
+}
+
+.rettangolo {
+    color: #a200ff; 
+    font-family: "Lato";
+    font-size: 20px; 
+    text-align: center;
+    line-height: 59px;
+    width: 200px; /* Definire una larghezza */
+    margin: 20px auto; /* Centrare con auto sui lati */
+    padding: 10px 20px;
+}
+
+
+.festival{
+    background-image: url("sfondofestt.gif");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+}
+.festivalgenerale h1 {
+    color: #1aff00;
+    font-family: "Orbitron";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 800px;
+    margin: auto;
+    margin-top: 80px;
+    text-transform: uppercase;
+}
+
+.festivalgenerale p {
+    color: #ffffff;
+    font-family: "Inconsolata";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1.4px;
+    width: 800px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.esplora p {
+    color: #ffffff;
+    font-family: "Orbitron";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: auto;
+    margin-top: 70px; 
+    text-align: center;
+}
+.elencofestival {
+    width: 500px; /* Larghezza del contenitore */
+    margin: 0 auto; /* Centra il contenitore */
+    text-align: left;
+}
+ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.elencofestival {
+    color: white;
+    font-family: "Inconsolata";
+    font-size: 25px;
+    font-style:oblique;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 150px;
+
+}
+.elencofestival a {
+    color: #0000ff;
+    font-family: "Inconsolata";
+    font-size: 30px;
+    text-align: center;
+    font-style:oblique;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.festivalgenerale ul li a:hover {
+    text-decoration: underline;
+}
+
+.diecifestival {
+    background-color: #000000;
+    text-align: center;
+}
+.ifestival{
+    margin-top: 50px;
+}
+.ifestival h1 {
+    color: #00FFB3;
+    font-family: "Orbitron";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.festivalimg img {
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    object-fit: cover;
+    margin-bottom: 50px;
+    max-width: 100%;
+}
+
+.ifestival h2 {
+    color: #C7F900;
+    font-family: "Orbitron";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.ifestival p {
+    color: #FFFFFF;
+    font-family: "Inconsolata";
+    text-align: left;
+    font-size: 25px;
+    font-style: normal;
+    line-height: 150%; 
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.condizioni {
+    margin-top: 70px;
+    color: #00FFB3;
+    font-family: "Archivo";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+
+.outer-container {
+    position: absolute; /* Necessario per il posizionamento assoluto dell'immagine interna */
+    display: inline-block; /* Per adattarsi alle dimensioni dell'immagine esterna */
+}
+
+.outer-image {
+    display: block; /* Per evitare spazi indesiderati sotto l'immagine */
+    max-width: 100%; /* Adatta la larghezza dell'immagine al contenitore */
+}
+
+.inner-container {
+    position: absolute; /* Posiziona l'immagine interna sopra quella esterna */
+    top: 50px; /* Regola la posizione verticale dell'immagine interna */
+    left: 35px; /* Regola la posizione orizzontale dell'immagine interna */
+    width: 80%; /* Dimensioni dell'immagine interna */
+    height: 80%; /* Mantiene le proporzioni dell'immagine interna */
+}
+
+.inner-image {
+    width: 90%; /* Adatta la larghezza dell'immagine interna al contenitore */
+    height: auto; /* Mantiene le proporzioni dell'immagine interna */
+    max-width: 100%;
+}
+.musica{
+    background-image: url(background-gradient-lights.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+.playlist{
+    margin-top: 120px;
+}
+
+.playlist-row {
+    display: flex; /* Attiva Flexbox */
+    align-items: center; /* Allinea verticalmente gli elementi */
+    gap: 10px; /* Spaziatura tra gli elementi */
+}
+
+.playlist-row img {
+    display: block; /* Assicura che le immagini siano trattate come blocchi */
+}
+.playlist h1{
+    color: #FFF;
+ text-align: left;
+ font-family: "Orbitron";
+ font-size: 30px;
+ font-style: normal;
+ font-weight: 600;
+ line-height: 111.542%; /* 35.694px */
+ letter-spacing: 2.24px;
+ text-transform: uppercase;
+ margin-left: 50px;
+ max-width: 1100px;
+}
+
+.playlist h2{
+    color: #FFF;
+ text-align: left;
+ font-family: "Orbitron";
+ font-size: 20px;
+ font-style: normal;
+ font-weight: 600;
+ line-height: 111.542%; /* 35.694px */
+ letter-spacing: 2.24px;
+ text-transform: uppercase;
+ margin-left: 50px;
+}
+
+.photo-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px; 
+    margin-top: 50px;
+}
+
+.photo-row a {
+    display: block;
+    margin-bottom: 100px;
+}
+
+.photo-row img {
+    width: 200px;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.photo-row2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    gap: 10px; 
+}
+
+.photo-row2 a {
+    display: block;
+    margin-bottom: 100px;
+}
+
+.photo-row2 img {
+    width: 200px;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.footer{
+    background-color: blueviolet;
+    color: #00FFB3;
+    padding: 50px;
+    text-align: right;
+    margin-top: 200px block;
+
+}
+
+.footer-links a {
+    color: #00FFB3;
+    font-family: "Lato";
+    font-size: 20px;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 1000px)
+
+
+{   
+    html, body {
+     max-width: 1000px; /* Garantisce che il body occupi l'intera altezza */
+     display: flex;
+     flex-direction: column; /* Allinea gli elementi verticalmente */
+    }
+
+    main {
+     flex-grow: 1; /* Occupa tutto lo spazio disponibile tra header e footer */
+    }
+
+            
+    header {
+        background-color: rgb(124, 0, 240);
+        padding: 5px 5px; 
+        height: 70px;   
+        position: fixed;
+        top: 0;
+        width: 100%;
+        max-width: 1000px;
+        margin-right: 10px;
+    }
+        
+    header nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        flex-direction: row;
+        gap: 5px;
+
+    }
+    
+    header nav ul li {
+        margin-left: 10px; 
+        margin-right: 10px;
+    }
+    
+    header h1 a {
+        color: #00FFB3;
+        font-family: "Ethnocentric";
+        font-size: 15px;
+        text-decoration: none;
+    }
+    
+    header nav ul li a {
+        color: #00FFB3;
+        font-family: "Lato";
+        font-size: 10px;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 5;
+    }
+    .home {
+        background-color: #000000;
+        width: 350px;
+        max-width: 1000px;
+        background-attachment: fixed;
+
+    }
+
+
+    .titolohome p {
+        color: #8cff00;
+        font-family:"Orbitron";
+        font-size: 20px;
+        font-style: normal;
+        line-height: 120%;
+        text-align: center;
+        margin: 30px;
+        margin-top: 100px;
+        width: 450px;
+        max-width: 900px;
+
+        
+    }    
+        
+    .testohome p {
+        color: #FFF;
+        font-family: "inconsolata";
+        font-size: 12px;
+        font-style: normal;
+        line-height: 120%; ;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        width: 450px;
+        max-width: 900px;
+        margin-bottom: 50px;
+
+    }
+    
+    .testohome p:nth-of-type(3) {
+        color: rgb(0, 255, 225)
+    }
+    
+    .videohome video {
+        width: 350px;
+        max-width: 900px;
+        height: 300px;
+        display: block;   
+        margin-left: 50px; 
+    }
+
+    .videohome {
+        text-align: center;
+    }
+    
+    .ultimorigo{
+        color: #00FFFF;
+        font-family:"Orbitron";
+        font-size: 10px;
+        font-style: normal;
+        line-height: 150%;
+        margin-top: 100px;
+        margin: 30px;
+        width: 450px;
+        max-width: 900px;
+
+    }
+    .testoultimo p{
+        color: #FFF;
+        font-family: "inconsolata";
+        font-size: 10px;
+        font-style: normal;
+        line-height: 150%; ;
+        margin-left: 30px;
+        width: 400px;
+        max-width: 900px;
+        margin: 30px;
+    
+    }
+    
+    .titoloindice {
+        color: #8cff00;
+        font-family: "Orbitron";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+        text-transform: uppercase;
+        margin: auto;
+        margin-top: 150px;
+        width: 350px;
+        max-width: 900px;
+
+    }
+    
+    .cornice-1, .cornice-2, .cornice-3, .cornice-4, .cornice-5 {
+        width: 350px;
+        color: #ffffff;
+        font-family: "Orbitron";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        max-width: 900px;
+        display: flex;
+        text-align: center;
+
+
+    }
+    
+    .cornice-1 { border-color: #00FFB3; margin-top: 50px; }
+    .cornice-2 { border-color: #00A3FF; }
+    .cornice-3 { border-color: #AB63FF; }
+    .cornice-4 { border-color: #F96900; margin-bottom: 20px ; }
+    
+    a {
+        color: rgb(255, 255, 255); 
+        text-decoration: none; 
+    }
+    
+    a:hover {
+        text-decoration: underline; 
+        color: white;
+    }
+    .storia {
+        background-image: url("sfondostoria.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        background-attachment: fixed;
+    }
+
+    .titoloindice1 {
+        color: #00FFB3;
+        font-family: "Orbitron";
+        font-size: 16px;
+        margin: 0 auto; 
+        margin-top: 100px;
+        margin-bottom: 60px;
+        width: 350px;
+        max-width: 900px;
+
+    }
+    
+    .titoloindice2 {
+        color: #00A3FF;
+        font-family: "Orbitron";
+        font-size: 16px;
+        margin: 0 auto; 
+        margin-top: 100px;
+        margin-bottom: 60px;
+        width: 350px;
+        max-width: 900px;
+
+    }
+    
+    .titoloindice3 {
+        color: #AB63FF;
+        font-family: "Orbitron";
+        font-size: 16px;
+        margin: 0 auto; 
+        margin-top: 100px;
+        margin-bottom: 60px;
+        width: 350px;
+        max-width: 900px;
+
+    }
+    
+    .titoloindice4 {
+        color: #F96900;
+        font-family: "Orbitron";
+        font-size: 16px;
+        width: 350px;
+        max-width: 900px;
+        margin: 0 auto; 
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+    
+    .contento {
+        color: white;
+        font-family: "Lato";
+        font-size: 12px;
+        font-style: normal;
+        line-height: 150%; 
+        width: 350px;
+        flex-shrink: 0;
+        margin: 10px auto;
+        font-weight: 700;
+        max-width: 900px;
+    }
+    
+    .contenuto {
+        color: rgb(255, 255, 255);
+        font-family: "Lato";
+        font-size: 10px;
+        line-height: 150%; 
+        width: 350px;
+        flex-shrink: 0;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        max-width: 900px;
+    }
+    
+    .arrow-left {
+        display: inline-block;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 20px solid #1aff00;
+        display:flex;
+        text-align: center;
+        max-width: fit-content;
+        margin: auto;
+    }
+    
+    .arrow-right {
+        display: inline-block;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 20px solid #1aff00;
+        display:flex;
+        text-align: center;
+        max-width: fit-content;
+        margin: auto;
+    }
+    
+    .arrow-link {
+        text-decoration: none;
+    }
+    
+    
+    .rettangolo a {
+        color: #a200ff; 
+        font-family: "Lato";
+        font-size: 20px; 
+        text-align: center;
+        line-height: 59px;
+        width: 200px; /* Definire una larghezza */
+        margin: 20px auto; /* Centrare con auto sui lati */
+        padding: 10px 20px;
+        }
+    
+    .imgstoria img {
+        width: 350px;
+        max-width: 900px;
+        height: 300px;
+        height: auto;
+        display: block;   
+        text-align: center;
+
+    }
+
+    .festival{
+        background-image: url("sfondofestt.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        background-attachment: fixed;
+    }
+
+
+    .festivalgenerale h1 {
+        color: #1aff00;
+        font-family: "Orbitron";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        width: 350px;
+        max-width: 900px;
+        margin: auto;
+        margin-top: 100px;
+        text-transform: uppercase;
+    }
+    
+    .festivalgenerale p {
+        color: #ffffff;
+        font-family: "Inconsolata";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 1.4px;
+        width: 350px;
+        max-width: 900px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .esplora p {
+        color: #ffffff;
+        font-family: "Orbitron";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%;
+        width: 380px;
+        max-width: 900px;
+
+    }
+
+    
+    .elencofestival {
+        width: 350px;
+        max-width: 900px;
+        margin: 0 auto; /* Centra il contenitore */
+        text-align: left;
+        margin-bottom: 100px;
+    } 
+    .elencofestival a {
+        color: #0000ff;
+        font-family: "Inconsolata";
+        font-size: 15px;
+        text-align: center;
+        font-style:oblique;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 100px;
+        width: 200px;
+        max-width: 900px;
+    }
+
+    ul {
+        list-style-type: none;
+        text-align: left;
+    }
+
+    .elencofestival {
+        color: white;
+        font-family: "Inconsolata";
+        font-size: 20px;
+        font-style:oblique;
+        font-weight: 500;
+        text-transform: uppercase;
+        width: 350px;
+        max-width: 900px;
+
+    
+    }
+    
+    .ifestival h1 {
+        color: #00FFB3;
+        font-family: "Orbitron";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+    
+    .festivalimg img {
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        object-fit: cover;
+        margin-bottom: 50px;
+    }
+    
+    .ifestival h2 {
+        color: #C7F900;
+        font-family: "Orbitron";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 150%; 
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        width: 400px;
+        max-width: 900px;
+        text-align: center;
+
+    }
+    
+    .ifestival p {
+        color: #FFFFFF;
+        font-family: "Inconsolata";
+        text-align: left;
+        font-size: 10px;
+        font-style: normal;
+        line-height: 150%; 
+        width: 350px;
+        max-width: 900px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+    .condizioni {
+        margin-top: 70px;
+        color: #00FFB3;
+        font-family: "inconsolata";
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        text-transform: uppercase;
+        margin: auto;
+        width: 350px;
+        max-width: 900px;
+
+    }
+    
+    .musica{
+        background-image: url(background-gradient-lights.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    .playlist{
+        margin-top: 80px;
+    }
+    
+    .playlist-row {
+        display: flex; /* Attiva Flexbox */
+        align-items: center; /* Allinea verticalmente gli elementi */
+        gap: 5px; /* Spaziatura tra gli elementi */
+    }
+    
+    .playlist-row img {
+        display: block; /* Assicura che le immagini siano trattate come blocchi */
+        max-width: 100%;
+    }
+    .playlist h1{
+     color: #FFF;
+     text-align: left;
+     font-family: "Orbitron";
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 450;
+     text-transform: uppercase;
+     margin-left: 20px;
+     width: 350px;
+     max-width: 950px;
+     margin-top: 100px;
+    }
+    
+    .playlist h2{
+     color: #FFF;
+     text-align: left;
+     font-family: "Orbitron";
+     font-size: 10px;
+     font-style: normal;
+     font-weight: 400;
+     text-transform: uppercase;
+     margin-left: 20px;
+     width: 350px;
+     max-width: 950px;
+
+    }
+    
+    .photo-row {
+        display: flex;
+        justify-content: space-around;
+        gap: 2px; 
+        margin-top: 20px;
+    }
+    
+    .photo-row a {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .photo-row img {
+        width: 100px;
+        height: auto;
+        display: block;
+        max-width: 100%;
+    }
+    
+    .photo-row2 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        gap: 5px; 
+    }
+    
+    .photo-row2 a {
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    .photo-row2 img {
+        width: 100px;
+        height: auto;
+        display: block;
+        max-width: 100%;
+    }
+    
+    .footer  {
+        background-color: blueviolet;
+        color: #00FFB3;
+        padding: 20px 10px;
+        background-attachment: fixed;
+        height: 50px;
+        padding: 5px 5px; 
+        top: 0;
+        width: 100%;
+        max-width: 1000px;
+        margin-right: 10px;
+    }
+    
+    .footer-links a {
+        color: #00FFB3;
+        font-family: "Lato";
+        font-size: 10px;
+        line-height: 50px;
+        text-decoration: none;
+        text-align: center;
+        
+    }
+    
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+    
+
+
+}
